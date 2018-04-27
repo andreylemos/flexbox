@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/functions.js"></script>
+	</head>
+	<body>
+		<section id="section" class="def-section m-t-50 m-b-10">
+			<span id="span1" class="def-span1">Texto 1</span>
+			<span id="span2" class="def-span2">Texto 2</span>
+			<span id="span3" class="def-span3">Texto 3</span>
+			<span id="span4" class="def-span4">Texto 4</span>
+		</section>
+
+		<div class="dsp-flex">
+			<div class="flex-def">
+				<h3>Eixo de alinhamento</h3>
+				<input type="radio" name="eixo" value="horizontal" checked> Horizontal (row) <br>
+				<input type="radio" name="eixo" value="vertical"> Vertical (column) <br>
+				<input type="radio" name="eixo" value="horizontalr"> Horizontal reverso (row-reverse) <br>
+				<input type="radio" name="eixo" value="verticalr"> Vertical reverso (column-reverse) <br>
+			</div>
+			<div class="flex-def">
+				<h3>Posicionamento de conteudo</h3>
+				<input type="radio" name="posicionamento" value="espacoEntre"> Espaco entre elementos (space-between) <br>
+				<input type="radio" name="posicionamento" value="espacoVolta"> Espaco em volta (space-around) <br>
+				<input type="radio" name="posicionamento" value="inicio" checked> Inicio (flex-start) <br>
+				<input type="radio" name="posicionamento" value="fim"> Fim (flex-end) <br>
+				<input type="radio" name="posicionamento" value="centro"> Centro (center) <br>
+			</div>
+			<div class="flex-def">
+				<h3>Alinhamento dentro do pai</h3>
+				<input type="radio" name="alinhamento" value="inicio"> Inicio (flex-start) <br>
+				<input type="radio" name="alinhamento" value="fim"> Fim (flex-end) <br>
+				<input type="radio" name="alinhamento" value="centro"> Centro (center) <br>
+				<input type="radio" name="alinhamento" value="preencher" checked> Preencher (stretch) <br>
+				<input type="radio" name="alinhamento" value="conteudo"> Conteudo (baseline) <br>
+			</div>
+			<div class="flex-def">
+				<h3>Alinhamento individual</h3>
+				<select id="alIndv">
+					<option value="span1">Span 1</option>
+					<option value="span2">Span 2</option>
+					<option value="span3">Span 3</option>
+					<option value="span4">Span 4</option>
+				</select>
+				<br>
+				<input type="radio" name="alinhamentoIndividual" value="inicio"> Inicio (flex-start) <br>
+				<input type="radio" name="alinhamentoIndividual" value="fim"> Fim (flex-end) <br>
+				<input type="radio" name="alinhamentoIndividual" value="centro"> Centro (center) <br>
+				<input type="radio" name="alinhamentoIndividual" value="preencher" checked> Preencher (stretch) <br>
+			</div>
+
+			<div class="flex-def">
+				<h3>Ajuste de tamanho</h3>
+				<select id="ajTam">
+					<option value="span1">Span 1</option>
+					<option value="span2">Span 2</option>
+					<option value="span3">Span 3</option>
+					<option value="span4">Span 4</option>
+				</select>
+				<br>
+				Crescimento (flex-grow) <input type="text" name="tamanhoGrow" value="0" class="w50"><br>
+				Diminuicao (flex-shrink) <input type="text" name="tamanhoShrink" value="1" class="w50"><br>
+				Inicial (flex-basis) <input type="text" name="tamanhoBasis" value="auto" class="w50"><br>
+
+			</div>
+
+			<div class="flex-def">
+				<h3>Ordem</h3>
+				<select id="ordem">
+					<option value="span1">Span 1</option>
+					<option value="span2">Span 2</option>
+					<option value="span3">Span 3</option>
+					<option value="span4">Span 4</option>
+				</select>
+				<br>
+				Ordem (1 a 4) <input type="text" name="ordemVal" value="0" class="w50"><br>
+			</div>
+		</div>
+		<br/>
+		<center><a href="index.html">Voltar</a></center>
+	</body>
+</html>
